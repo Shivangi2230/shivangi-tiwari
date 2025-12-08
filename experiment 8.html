@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Three Profile Cards (with outer box)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --outer-border: #222;
+      --outer-padding: 18px;
+      --outer-radius: 2px;
+      --page-bg: #efefef;
+      --card-bg: #fff;
+      --accent: #1e88ff;
+      --muted: #8b8b8b;
+      --shadow: 0 10px 18px rgba(23,23,23,0.06);
+      --card-radius: 8px;
+      --gap: 36px;
+      --max-width: 1300px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body{
+      font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--page-bg);
+      color: #111;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Outer framed box (keeps the outer box as it is in the image) */
+    .outer {
+      width: 100%;
+      max-width: var(--max-width);
+      background: transparent; /* outer shows border only */
+      border: 2px solid var(--outer-border);
+      padding: calc(var(--outer-padding) * 1.5);
+      box-shadow: 0 0 0 0 rgba(0,0,0,0.02);
+      border-radius: var(--outer-radius);
+    }
+
+    /* inner white band to match the image look (thin inset white area) */
+    .inner {
+      background: #fff;
+      border-radius: 4px;
+      padding: 28px 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: var(--gap);
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .card{
+      background: var(--card-bg);
+      width: 260px;
+      min-width: 220px;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow);
+      padding: 28px 22px 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      margin: -62px auto 10px; /* pulls the circle partly out to match image spacing */
+      box-shadow: 0 6px 12px rgba(30,30,30,0.12);
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 8px;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    /* responsiveness: keep good spacing on small screens */
+    @media (max-width: 880px) {
+      .cards { justify-content: center; gap: 20px; }
+      .card { width: 86%; max-width: 420px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer">
+    <div class="inner">
+      <div class="cards">
+        <div class="card">
+          <div class="avatar">JK</div>
+          <div class="name">Jeet Kumar</div>
+          <div class="meta">B.Tech - CSE</div>
+          <div class="meta">Roll No: 21CS1007</div>
+          <div class="small">1st Year</div>
+        </div>
+
+        <div class="card">
+          <div class="avatar">AR</div>
+          <div class="name">Asha Rani</div>
+          <div class="meta">B.Tech - IT</div>
+          <div class="meta">Roll No: 21IT1012</div>
+          <div class="small">1st Year</div>
+        </div>
+
+        <div class="card">
+          <div class="avatar">RK</div>
+          <div class="name">Rohit Kumar</div>
+          <div class="meta">B.Tech - ECE</div>
+          <div class="meta">Roll No: 21EC1009</div>
+          <div class="small">1st Year</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+Shivangi Tiwari
+cse ds 3

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopEase - Demo</title>
+  <style>
+    /* Reset a little */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff;
+      color: #111;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Header / Nav */
+    .site-header {
+      background: #222;              /* dark bar */
+      color: #fff;
+      border-bottom: 3px solid #111;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 12px 18px;
+      position: relative;
+    }
+
+    .nav-left {
+      flex: 1;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      color: #f8f5f0;
+    }
+
+    .nav-center {
+      /* center list horizontally */
+      display: flex;
+      justify-content: center;
+      flex: 2;
+    }
+
+    .nav-center ul {
+      list-style: none;
+      display: inline-flex;
+      gap: 30px;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .nav-center a {
+      color: #e9e6e2;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: "Times New Roman", serif;
+      opacity: 0.95;
+    }
+
+    .nav-right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .nav-right a {
+      color: #e9e6e2;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    /* Outer boxed content (big white area with border like the screenshot) */
+    .outer-box {
+      max-width: 1200px;
+      margin: 18px auto;
+      border: 3px solid #555;
+      padding: 18px;
+      min-height: 540px; /* makes the large empty area */
+      background: #fff;
+    }
+
+    .hero {
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .hero h1 {
+      font-size: 26px;
+      margin-bottom: 6px;
+    }
+
+    .hero p {
+      color: #333;
+      font-size: 14px;
+    }
+
+    /* small screens */
+    @media (max-width: 700px) {
+      .nav {
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+      .nav-center ul { gap: 12px; font-size: 14px; }
+      .outer-box { min-height: 320px; padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-left">
+        <div class="logo">ShopEase</div>
+      </div>
+
+      <div class="nav-center">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a href="#" title="Cart">Cart 🛒</a>
+        <a href="#" title="Login">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="outer-box" role="main">
+      <div class="hero">
+        <h1>Welcome to ShopEase!</h1>
+        <p>Your one-stop destination for all shopping needs.</p>
+      </div>
+
+      <!-- The rest of the large white content area is intentionally left blank,
+           like in your screenshot. Put products, cards or grid here. -->
+    </section>
+  </main>
+
+</body>
+</html>
+
+Shivangi Tiwari
+CSE DS3

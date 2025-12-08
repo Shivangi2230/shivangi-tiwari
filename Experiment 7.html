@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Simple Navigation</title>
+  <style>
+    /* Outer container that matches the framed box in your image */
+    .frame {
+      max-width: 900px;
+      margin: 24px auto;
+      border: 2px solid #111;
+      padding: 12px 16px 40px;
+      box-sizing: border-box;
+      background: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+    }/* Top header bar */
+.header-bar {
+  background: #d9d9d9; /* light gray */
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.header-bar h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* color the word "Website" red to match the sample */
+.header-bar .highlight { color: #b22222; }
+
+/* Navigation rows */
+.nav-row { margin-top: 14px; }
+
+.nav { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* small rectangular link style (first row - bluish) */
+.nav a {
+  display: inline-block;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #3b5ea6;
+  background: #e7f0ff;
+  color: #12386b;
+  font-size: 14px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+}
+
+/* second row: green buttons */
+.nav-row.green a {
+  background: #ccf2cf;
+  border: 1px solid #7ec57e;
+  color: #1f6f2f;
+}
+
+/* make it look slightly like small badges */
+.nav a:hover { transform: translateY(-1px); }
+
+/* small helper to separate rows visually */
+.spacer { height: 6px; }
+
+/* responsive: keep layout neat on very small screens */
+@media (max-width: 480px) {
+  .frame { padding: 8px; }
+  .header-bar h1 { font-size: 16px }
+  .nav a { font-size: 13px; padding: 6px 8px }
+}
+
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="header-bar">
+      <h1>My <span class="highlight">Website</span> Navigation</h1>
+    </div><div class="nav-row">
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</div>
+
+<div class="spacer"></div>
+
+<div class="nav-row green">
+  <nav class="nav">
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Messages</a>
+    <a href="#">Logout</a>
+  </nav>
+</div>
+
+  </div>
+</body>
+</html>
+
+</head>
+<body>
+    
+</body>
+</html>
